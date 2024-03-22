@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  hello="DONT sleep"
+  employee:any;
+  result:boolean=true;//input type  value={{employee.FirstName}}
+  constructor() {
+    this.employee = {
+      FirstName : "qwerty",
+      LastName : "Kumar",
+      Gender : "Male"
+  };
+ }
 }
